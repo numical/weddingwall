@@ -1,0 +1,10 @@
+{
+  "registered" : true/false,
+  "personal" : {
+    "age": {string},
+    "city": {string},
+    "country": {string}
+  }
+  "nickname": {string},
+  "openDeedCount": {number}
+}

@@ -1,0 +1,8 @@
+.ImageThumbnail-default {
+  height: 24px;
+  margin: 0 6px;
+}
+
+.ImageThumbnail-active {
+  border: red 2px solid;
+}

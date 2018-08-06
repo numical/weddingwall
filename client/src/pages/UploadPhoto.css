@@ -1,0 +1,26 @@
+.UploadPhoto-image {
+  height: 320px;
+}
+
+.UploadPhoto-toolbar {
+  justify-content: space-evenly;
+}
+
+.UploadPhoto-toolbar-title {
+  font-family: 'Bungee Inline';
+  font-size: 7vw;
+  margin: 1vh 0;
+}
+
+.UploadPhoto-toolbar-item {
+  width: 50%;
+  margin: 2vh 0 2vh 10vw;
+  color:  #002E4A;
+  display: flex;
+  flex-direction: row;
+}
+
+.UploadPhoto-toolbar-image {
+  height: 5vw;
+  margin-right: 3vw;
+}

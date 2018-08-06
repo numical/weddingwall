@@ -1,0 +1,45 @@
+.TakePhoto-image {
+  width: 100%;
+}
+
+.TakePhoto-video {
+  height: 320px;
+}
+
+.TakePhoto-video-container {
+  position: relative;
+}
+
+.TakePhoto-video-instruction {
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  top: 40%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  z-index: 2;
+}
+
+.TakePhoto-toolbar {
+  justify-content: space-evenly;
+}
+
+.TakePhoto-toolbar-title {
+  font-family: 'Bungee Inline';
+  font-size: 7vw;
+  margin: 1vh 0;
+}
+
+.TakePhoto-toolbar-item {
+  width: 50%;
+  margin: 2vh 0 2vh 10vw;
+  color: #002E4A;
+  display: flex;
+  flex-direction: row;
+}
+
+.TakePhoto-toolbar-image {
+  height: 5vw;
+  margin-right: 3vw;
+}

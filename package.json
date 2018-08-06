@@ -1,0 +1,22 @@
+{
+  "name": "deedit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Wrong directory - goto child directories 'client' and 'wonderwall\" && exit 1",
+    "build-all": "find ./* -mindepth 1 -maxdepth 1 -name package.json -execdir npm run build \\;",
+    "install-all": "find ./* -maxdepth 1 -name package.json -execdir npm install \\;"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.247.1"
+  }
+}

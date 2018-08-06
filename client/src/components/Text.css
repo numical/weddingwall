@@ -1,0 +1,16 @@
+.Text-text {
+  margin-bottom: 1vh;
+  text-align: left;
+}
+
+.Text-label {
+  font-weight: bold;
+  margin: 1vh 0 1vh 3vh;
+  text-align: left;
+}
+
+.Text-text a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #002E4A;
+}

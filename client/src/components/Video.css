@@ -1,0 +1,19 @@
+.Video-container {
+  width: 320px;
+  height: 240px;
+  position: relative;
+}
+
+.Video-child {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Video-instruction {
+  top: 70%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}

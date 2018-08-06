@@ -1,0 +1,24 @@
+@keyframes dropin {
+  from { max-height: 0; }
+  to   { max-height: 600px; }
+}
+
+.DeedSummary-container {
+  color: white;
+  border-bottom: white 2px solid;
+  width: 100%;
+  padding: 3px 6px;
+}
+
+.Deed-Summary-dropin {
+  overflow: hidden;
+  animation: dropin 0.5s;
+}
+
+.DeedSummary-image {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: right;
+  margin: 1vw;
+}

@@ -1,0 +1,16 @@
+.PageHeader_container {
+  background-color: #002E4A;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.PageHeader_image {
+  width: 40vw;
+  padding-top: 2vh;
+}
+
+.PageHeader_title {
+  color: white;
+  font-size: 4vw;
+  padding-bottom: 2vh;
+}

@@ -1,0 +1,22 @@
+export default [
+  'England',
+  'Scotland',
+  'Wales',
+  'Northern Ireland',
+  'United States of America',
+  'Australia',
+  'Belgium',
+  'Canada',
+  'China',
+  'Denmark',
+  'France',
+  'Germany',
+  'Italy',
+  'Ireland',
+  'Netherlands',
+  'Norway',
+  'Poland',
+  'Spain',
+  'Sweden',
+  'Other'
+];

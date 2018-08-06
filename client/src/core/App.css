@@ -1,0 +1,20 @@
+.App-error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-color: #002E4A;
+  font-size: xx-large;
+}
+
+.App-error-title {
+  margin: 5vh 5vw;
+  font-family: 'Bungee Inline';
+}
+
+.App-error-msg {
+  margin: 5vh 5vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
