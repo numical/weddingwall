@@ -33,11 +33,7 @@ class Image extends Component {
       ? null
       : setPopupContent.bind(null, (<Image {...this.props} isPopup />));
 
-    const imgSrc = (typeof src !== 'string')
-      ? src
-      : (src.startsWith('http')  || src.startsWith('/static'))
-        ? src
-        : `https://assets.deedit.org/${src}`;
+    const imgSrc = `https://s3.eu-central-1.amazonaws.com/photos-from-the-wedding/${src}`;
     const imgProps = { alt, className, onClick, onLoad, src: imgSrc, ...imageDimensions };
     return (<img {...imgProps} />);
   }

@@ -61,7 +61,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint ./src",
-    "publish": "npm run build && node ../publish.js build deedit.org"
+    "publish": "npm run build && node ../publish.js build bardas.website"
   },
   "proxy": "http://localhost:11111",
   "jest": {

@@ -2,8 +2,8 @@ const AWS = require('aws-sdk');
 const fs = require('fs');
 const path = require('path');
 
-const REGION = 'eu-west-1';
-const IDENTITY_POOL_ID = 'eu-west-1:38d36f69-6926-4e31-9d57-b56861af58b6';
+const REGION = 'eu-central-1';
+const IDENTITY_POOL_ID = 'eu-central-1:3ed79cf4-ea52-4931-a2b0-fe3735eb98f5';
 
 function publish (srcFolder, targetBucket){
 

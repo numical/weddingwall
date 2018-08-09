@@ -2,7 +2,7 @@ import React from 'react';
 import Image from './Image';
 
 function Photo (props) {
-  const imgProps = { ...props, alt:'deed evidence' };
+  const imgProps = { ...props, alt:'wedding photo' };
   return (<Image {...imgProps} />);
 }
 

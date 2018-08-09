@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url('../images/wonderwall-background.png');
+  background-image: url('./happy-couple.jpeg');
   background-repeat: repeat;
 }
 
