@@ -4,7 +4,6 @@ import uuidv4 from 'uuid/v4';
 import Button from '../components/Button';
 import Image from '../components/Image';
 import ProgressBar from '../components/ProgressBar';
-import SocialMedia from '../components/SocialMedia';
 import Title from '../components/Title';
 import { imageSuffix } from '../config/imageConstants';
 import { prepareUpload } from '../data/S3';
@@ -67,6 +66,7 @@ class SavePhoto extends Component {
     const { props, state } = this;
     const { share, view } = props;
     const { progressPercent, progressText, imageClass, imageSrc } = state;
+    const titleText = (progressPercent === 100) ? 'Your photo is uploaded' : 'Uploading your photo';
     const imageProps = {
       className: `CompleteDeed-image ${imageClass}`,
       src: imageSrc,
@@ -78,11 +78,10 @@ class SavePhoto extends Component {
     };
     return (
       <div className='page'>
-        <Title text='You Deed It!' />
+        <Title text={titleText} />
         <Image {...imageProps} />
         <ProgressBar {...progressProps} />
-        <SocialMedia />
-        <Button text='Upload another photo' onClick={share} />
+        <Button text='Share another photo' onClick={share} />
         <Button text='View all photos' onClick={view} />
       </div>
     );

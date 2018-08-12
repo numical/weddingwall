@@ -18,17 +18,16 @@ function NavItem (props) {
 function GlobalNav (props) {
   const { home, share, view } = props;
   const shareImageStyle = {
-    marginTop: '5px',
     backgroundColor: 'white',
     padding: '5px',
     borderRadius: '5px'
   };
   return (
-    <footer className='flexContainerRow GlobalNav-container'>
+    <header className='flexContainerRow GlobalNav-container'>
       <NavItem src={homeImage} text='Home' onClick={home} />
       <NavItem src={shareImage} text='Share' onClick={share} imageStyle={shareImageStyle} />
       <NavItem src={viewImage} text='View' onClick={view} />
-    </footer>
+    </header>
   );
 }
 

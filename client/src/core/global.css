@@ -1,69 +1,15 @@
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes dropin {
-  from { max-height: 0; }
-  to   { max-height: 100px; }
-}
-
-@keyframes wave {
-  10% { transform:rotate(-20deg); }
-  20% { transform:rotate(40deg); }
-  30% { transform:rotate(-40deg); }
-  40% { transform:rotate(40deg); }
-  50% { transform:rotate(-40deg); }
-  60% { transform:rotate(40deg); }
-  70% { transform:rotate(-40deg); }
-  80% { transform:rotate(40deg); }
-  90% { transform:rotate(-20deg); }
-  100% { transform:rotate(0deg); }
-}
-
-@keyframes zoom {
-  10% { transform:scale(1.2); }
-  20% { transform:scale(0.8); }
-  30% { transform:scale(1.2); }
-  40% { transform:scale(0.8); }
-  50% { transform:scale(1.2); }
-  60% { transform:scale(0.8); }
-  70% { transform:scale(1.2); }
-  80% { transform:scale(0.9); }
-  90% { transform:scale(1.1); }
-  100% { transform:scale(1); }
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3vh;
-  color: #002E4A;
+  font-size: 4vw;
+  background-color: black;
+  color: white;
 }
 
 button {
   display: block;
-}
-
-input[type="checkbox"] {
-  margin-left: 3vw;
-  transform:scale(1.5, 1.5);
-}
-
-div label {
-  padding-left: 2vw;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  padding: 2vw;
-  flex: 50; /* all the inner vertical space */
 }
 
 .flexContainerRow {
@@ -85,27 +31,10 @@ div label {
   flex: 1 1 auto;
 }
 
+.page {
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
-
-.fadein {
-  animation: fadein 2s;
-}
-
-.fadeout {
-  animation: fadeout 2s;
-}
-
-.dropin {
-  animation: dropin 1s;
-}
-
-.wave {
-  animation:wave 2s ease-in-out;
-}
-
-.zoom {
-  animation:zoom 2s ease-in-out;
-}
-

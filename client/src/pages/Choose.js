@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from '../components/Button';
-import Text from '../components/Text';
+import Title from '../components/Title';
 
 function Choose (props) {
   const { takePhoto, uploadPhoto } = props;
 
   return (
     <div className='page'>
-      <Text text='Please choose either to' />
+      <Title text='Please choose either to' />
       <Button text='Upload an existing picture' onClick={uploadPhoto} />
-      <Text text='or to' />
+      <Title text='or to' />
       <Button text='Take a new photo' onClick={takePhoto} />
     </div>
   );

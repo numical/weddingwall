@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { postData } from '../data/fetchWrapper';
-import { version } from '../../package';
 import './App.css';
 import './global.css';
 
-const methods = ['renderError', 'logError'];
+const methods = ['renderError'];
 
 class App extends Component {
   constructor (props) {
@@ -15,18 +13,7 @@ class App extends Component {
 
   componentDidCatch (error, info) {
     console.log(`App error caught: ${error} : ${info}`);
-    this.logError(error.message, info);
     this.setState({ error });
-  }
-
-  async logError (error, info) {
-    try {
-      const { userAgent } = navigator;
-      const body = { error, info, userAgent, version };
-      await postData('deeditLogError', body);
-    } catch (err) {
-      console.log(`Error logging error ${err}`);
-    }
   }
 
   renderError () {

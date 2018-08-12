@@ -1,1 +1,0 @@
-export const emailAddress = 'deedit.info@gmail.com'; // 'hi@deedit.org'

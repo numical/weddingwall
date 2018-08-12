@@ -54,10 +54,10 @@ class ProgressBar extends Component {
       className: (className) ? `ProgressBar-container ${className}` : 'ProgressBar-container',
       style: { ...style, color }
     };
-    let strokeColor = color || '#002E4A';
+    let strokeColor = color || 'black';
     if (infinite) {
       if (percent < 1 || percent > 99 ) {
-        strokeColor = '#D9D9D9';
+        strokeColor = 'white';
       }
     }
     const lineProps = {

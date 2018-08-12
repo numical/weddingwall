@@ -1,52 +1,10 @@
-.Home-superdeed-container {
-    color: white;
-    margin-bottom: 2vw;
-    padding: 2vw;
+.Home_image {
+    margin: auto;
+    border-radius: 100px;
 }
 
-.Home-superdeed-description-container {
-    justify-content: space-between;
- }
-
-.Home-superdeed-icon {
-    width: 30vw;
-    height: 30vw;
-}
-
-.Home-call-to-action-container {
-    margin-top: 2vh;
-}
-
-.Home-text {
-    margin: 0;
-    text-align: left;
-}
-
-.Home-chevron {
-    height: 8vw;
-}
-
-.Home-xx-large-font {
-    font-family: 'Bungee Inline';
-    font-size: 16vw;
-}
-
-.Home-x-large-font {
-    font-family: 'Bungee Inline';
-    font-size: 8vw;
-}
-
-.Home-x-large-plain-font {
-    color: black;
-    font-size: 8vw;
-}
-
-.Home-large-font {
-    font-family: 'Bungee Inline';
-    font-size: 6vw;
-}
-
-.Home-large-plain-font {
-    color: black;
-    font-size: 6vw;
+.Home_version {
+    margin-top: auto;
+    margin-right: 5px;
+    text-align: right;
 }

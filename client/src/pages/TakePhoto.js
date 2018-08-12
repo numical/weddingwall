@@ -132,7 +132,7 @@ class TakePhoto extends Component {
     const buttonProps = {
       className: (imageData) ? '' : 'hidden',
       onClick: savePhoto.bind(null, { imageData }),
-      text: 'Send Photo'
+      text: 'Share now'
     };
 
     if (imageData) {
@@ -143,7 +143,7 @@ class TakePhoto extends Component {
 
     return (
       <div className='page'>
-        <Title text='Take a photo of your deed.' />
+        <Title text='Take a photo.' />
         <div {...videoContainerProps} >
           <video autoPlay className='TakePhoto-image' ref={video} />
           <Text className='TakePhoto-video-instruction' text='Touch to take a picture' />

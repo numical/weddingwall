@@ -1,6 +1,4 @@
 .GlobalNav-container {
-  margin-top: auto;
-  background-color: #002E4A;
   padding: 1vh;
   justify-content: space-evenly;
 }
@@ -8,8 +6,6 @@
 .GlobalNav-item {
   padding: 1px;
   margin: 0 1vw;
-  color: white;
-  font-size: 5vw;
   text-align: center;
   flex-grow: 1;
   display: flex;

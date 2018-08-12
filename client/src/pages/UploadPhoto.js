@@ -120,7 +120,7 @@ class UploadPhoto extends Component {
     const { renderInput, rotateImage } = this;
     return (
       <div>
-        <Text className='UploadPhoto-toolbar-title' text='Happy with your snap?' />
+        <Text className='UploadPhoto-toolbar-title' text='Happy with your photo?' />
         <div className='flexContainerRow UploadPhoto-toolbar'>
           <div className='UploadPhoto-toolbar-item' onClick={rotateImage} >
             <ImageComponent src={rotateIcon} className='UploadPhoto-toolbar-image' />
@@ -147,11 +147,11 @@ class UploadPhoto extends Component {
     };
     const imageControls = (imageData)
       ? renderToolbar()
-      : renderInput('Select a picture', 'Component-default Button-default');
+      : renderInput('Select a photo', 'Component-default Button-default');
     const buttonProps = {
       className: (imageData) ? '' : 'hidden',
       onClick: savePhoto.bind(null, { imageData }),
-      text: 'Send Snap'
+      text: 'Share now'
     };
 
     if (imageData) {
@@ -160,7 +160,7 @@ class UploadPhoto extends Component {
 
     return (
       <div className='page'>
-        <Title text='Upload a photo of your deed' />
+        <Title text='Share a photo' />
         <canvas ref={canvas} className='hidden' />
         <img alt='what will be submitted' {...imageProps} />
         {imageControls}

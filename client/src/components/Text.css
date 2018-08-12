@@ -1,6 +1,5 @@
 .Text-text {
-  margin-bottom: 1vh;
-  text-align: left;
+  margin: 1vh 0;
 }
 
 .Text-label {
@@ -12,5 +11,4 @@
 .Text-text a {
   font-weight: bold;
   text-decoration: underline;
-  color: #002E4A;
 }

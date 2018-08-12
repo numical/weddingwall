@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { createLocalUser, getLocalUser, removeLocalUser, removeUser } from '../data/user';
 import Choose from './Choose';
 import Error from './Error.js';
 import FetchError from './FetchError';
 import GlobalNav from '../components/GlobalNav';
 import Home from './Home';
-import PageHeader from '../components/PageHeader';
 import SavePhoto from './SavePhoto';
 import TakePhoto from './TakePhoto';
 import UploadPhoto from './UploadPhoto';
@@ -38,7 +36,6 @@ class Pages extends Component {
   createInitialState () {
     return {
       pageName: 'home',
-      user: getLocalUser(),
       previousPage: null
     };
   }
@@ -50,7 +47,6 @@ class Pages extends Component {
         nextPageProps,
         pageName,
         previousPage: this.updateHistory(clearPreviousPage),
-        user: getLocalUser()
       });
       window.scrollTo(0, 0);
     };
@@ -98,13 +94,12 @@ class Pages extends Component {
   }
 
   render () {
-    const { navigationMethods, nextPageProps, user } = this.state;
-    const pageProps = { ...navigationMethods, ...nextPageProps, user };
+    const { navigationMethods, nextPageProps } = this.state;
+    const pageProps = { ...navigationMethods, ...nextPageProps };
     return (
       <div className='flexContainerColumn Pages-container'>
-        <PageHeader {...pageProps} />
-        { this.selectPage(pageProps) }
         <GlobalNav {...pageProps} />
+        { this.selectPage(pageProps) }
       </div>
     );
   }

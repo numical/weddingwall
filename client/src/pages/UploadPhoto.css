@@ -7,15 +7,14 @@
 }
 
 .UploadPhoto-toolbar-title {
-  font-family: 'Bungee Inline';
   font-size: 7vw;
   margin: 1vh 0;
 }
 
 .UploadPhoto-toolbar-item {
+  font-family: system-ui;
   width: 50%;
   margin: 2vh 0 2vh 10vw;
-  color:  #002E4A;
   display: flex;
   flex-direction: row;
 }
