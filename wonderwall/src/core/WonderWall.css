@@ -27,3 +27,13 @@
 .Wonderwall_stats {
   width: 100%;
 }
+
+.Wonderwall_slideshow_image {
+  animation: fadein 1s;
+  height: 90vh;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
